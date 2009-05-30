@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<language-pack>
+	<header>
+		<author>Moxiecode Systems AB</author>
+		<version minor="2" major="0" releasedate="2005-10-28" />
+		<description>
+			Detta är det svenska språkpaketet till MCImageManager.
+		</description>
+	</header>
+
+	<language code="sv" title="Swedish" dir="ltr">
+		<group target="common">
+			<item name="filemanager">Hoppa till filhanteraren</item>
+			<item name="createdir">Skapa katalog</item>
+			<item name="refresh">Uppdatera</item>
+			<item name="upload">Ladda upp bild</item>
+			<item name="error_no_access">Fel: Ingen skriv access i på denna file eller i denna katalog.</item>
+			<item name="error_delete_failed">Fel: Du har inte rättigheter att radera filer i denna katalog.</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">Skapa katalog</item>
+			<item name="description">Välj namnet på katalogen du vill skapa.</item>
+			<item name="template">Mall:</item>
+			<item name="select_template">-- Välj mall --</item>
+			<item name="directory_name">Katalognamn:</item>
+			<item name="create_in">Skapa inuti:</item>
+			<item name="button_create">Skapa</item>
+			<item name="button_cancel">Avbryt</item>
+			<item name="error_missing_name">Fel: Du måste ange ett katalognamn.</item>
+			<item name="error_select_template">Fel: Du måste välja en katalog mall.</item>
+			<item name="error_template_missing">Fel: Den valda mallen kunde inte hittas.</item>
+			<item name="error_invalid_name">Fel: Katalognamnet du angav innehåller inkorrekta tecken.</item>
+			<item name="error_exists">Fel: En katalog med det angivna namnet finns redan.</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">Ladda upp</item>
+			<item name="description">Använd formuläret för att ladda upp filer.</item>
+			<item name="upload_in">Ladda upp till:</item>
+			<item name="valid_extensions">Godkända filändelser:</item>
+			<item name="max_upload_size">Max filstorlek:</item>
+			<item name="file_to_upload">File att ladda upp:</item>
+			<item name="as_file_name">Som filnamn:</item>
+			<item name="required_filename">Du måste skriva ett filnamn till filen du vill ladda upp.</item>
+			<item name="button_upload">Ladda upp</item>
+			<item name="button_add_upload">Lägg till fil</item>
+			<item name="button_cancel">Avbryt</item>
+			<item name="error_exists">Fel: En fil med det angivna namnet existerar redan.</item>
+			<item name="error_to_large">Fel: Filen du försöker ladda upp är för stor.</item>
+			<item name="remove">Tabort</item>
+		</group>
+
+		<group target="images">
+			<item name="title">Moxiecode Image Manager</item>
+			<item name="subtitle">Image Manager</item>
+			<item name="select_directory">Välj katalog:</item>
+			<item name="width">Vidd:</item>
+			<item name="height">Höjd:</item>
+			<item name="type">Typ:</item>
+			<item name="size">Storlek:</item>
+			<item name="scale">Skalning:</item>
+			<item name="confirm_delete">Är du säker på att du vill ta bort denna fil?</item>
+			<item name="no_files">Det finns inga bilder i denna katalog.</item>
+			<item name="image">Bild bild</item>
+			<item name="bmp">BMP bild</item>
+			<item name="png">PNG bild</item>
+			<item name="jpg">JPEG bild</item>
+			<item name="gif">GIF bild</item>
+			<item name="tif">TIFF bild</item>
+			<item name="editwriteaccess">Inga skrivrättigheter i katalogen, kan ej skapa temporära filer.</item>
+		</group>
+
+		<group target="edit_image">
+			<item name="save_image">Spara bild</item>
+			<item name="revert_image">Återgå till den senaste sparade</item>
+			<item name="toggle_color">Invertera markeringsfärgen</item>
+			<item name="crop_image">Beskär bild</item>
+			<item name="resize_image">Skala om bild</item>
+			<item name="please_wait">Behandlar bilder, vad god vänta...</item>
+			<item name="constrain">Bibehåll proportioner</item>
+			<item name="left">v:</item>
+			<item name="top">t:</item>
+			<item name="width">b:</item>
+			<item name="height">h:</item>
+			<item name="error_selection">Används markeringsverktyget för att beskära bilden.</item>
+			<item name="error_resize">Du måste ange en höjd och bredd på bilden för att skala om den.</item>
+		</group>
+
+		<group target="preview">
+			<item name="title">Förhandsgranskning</item>
+			<item name="prev">föregående</item>	
+			<item name="next">nästa</item>
+			<item name="keyboard_next">Snabbtangenter för nästa bild: SPACE,N,RIGHTARROW,PAGE DOWN</item>
+			<item name="keyboard_prev">Snabbtangenter för föregående bild: P,LEFTARROW,PAGE UP</item>
+		</group>
+
+	</language>
+</language-pack>
+

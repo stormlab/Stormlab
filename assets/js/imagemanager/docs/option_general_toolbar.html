@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Option: general.toolbar</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+	<h1>Option: general.toolbar</h1>
+</div>
+
+<div class="content">
+	<p>This option enables you to specify what tools are to be available in the toolbar for users. The option should contain a comma separated list of tools to be visible in toolbar. If you decide to use the filemanager as well, you need to configure <a href="option_filemanager_urlprefix.html">filemanager.urlprefix</a> option.</p>
+	<p>
+		<h3>Available tools</h3>
+		<ul>
+			<li>refresh - Refresh view</li>
+			<li>upload - Upload file</li>
+			<li>createdir - Create directories</li>
+			<li>separator - Separator line</li>
+			<li>filemanager - Link to the filemanger (interoperability with the MCImageManager)</li>
+		</ul>
+	</p>
+	<h3>Example of usage in the config.php file:</h3>
+	<div class="example">
+<pre>
+$mcImageManagerConfig['general.toolbar'] = "refresh,upload,createdir";
+</pre>
+</div>
+<br />
+	<h3>Example of usage in a mc_access file:</h3>
+	<div class="example">
+<pre>
+general.toolbar=refresh,upload
+</pre>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="helpindexlink"><a href="index.html">Help index</a></div>
+	<div class="copyright">Copyright &copy; 2005-2006 Moxiecode Systems AB</div>
+	<br style="clear: both" />
+</div>
+
+</body>
+</html>

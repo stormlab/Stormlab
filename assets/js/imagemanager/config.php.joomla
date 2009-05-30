@@ -1,0 +1,15 @@
+<?php
+	require_once("classes/Authenticators/JoomlaAuthenticatorImpl.php");
+
+	// General settings
+	$mcImageManagerConfig['general.login_page'] = "not_loggedin.php";
+
+	// File system settings
+	$mcImageManagerConfig['filesystem.path'] = 'images';
+	$mcImageManagerConfig['filesystem.rootpath'] = 'images';
+
+	// Authenication with Session
+	$mcImageManagerConfig['authenticator'] = "JoomlaAuthenticatorImpl";
+	$mcImageManagerConfig['authenticator.joomla.valid_users'] = "/(.+)/i"; // All users
+	//$mcImageManagerConfig['authenticator.joomla.valid_users'] = "/(admin|user1|user2)/i";
+?>

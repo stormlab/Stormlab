@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Option: thumbnail.use_exif</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+	<h1>Option: thumbnail.use_exif</h1>
+</div>
+
+<div class="content">
+	<p>Boolean option for enabling the use of EXIF data for the display of thumbnails. Many jpg, jpeg or tiff images contains a thumbnail version of the image, this options enables MCImageManager to extract and use that thumbnail. The thumbnail will not be saved down, it is extracted every time the image is viewed inside MCImageManager.</p>
+	<p>Please note that the size of this thumbnail will be stretched to the size specified in the MCImageManager configuration options.</p>
+	<p>Default value of this option is false.</p>
+	<h3>Example of usage in the config.php file:</h3>
+	<div class="example">
+<pre>
+$mcImageManagerConfig['thumbnail.use_exif'] = true;
+</pre>
+</div>
+<br />
+	<h3>Example of usage in a mc_access file:</h3>
+	<div class="example">
+<pre>
+thumbnail.use_exif=true
+</pre>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="helpindexlink"><a href="index.html">Help index</a></div>
+	<div class="copyright">Copyright &copy; 2005-2006 Moxiecode Systems AB</div>
+	<br style="clear: both" />
+</div>
+
+</body>
+</html>

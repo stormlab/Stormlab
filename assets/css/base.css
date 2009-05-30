@@ -1,0 +1,453 @@
+	
+	* {
+		margin : 0;
+		padding : 0;
+	}
+	body {
+		font : normal 13px 'Lucida Grande','Trebuchet MS',arial,sans-serif;
+		line-height : 17px;
+		color : #4A4C59;
+		background : #34362B;
+	}
+	a:link,a:visited {
+		color : #858421;
+		text-decoration : none;
+	}
+	a:hover,a:active {
+		color : #BAB801;
+	}
+	h1,h2,h3,h4,h5,h6,p,ol,ul {
+		margin-bottom : 17px;
+	}
+	h3 {
+		clear : both;
+		font-size : 18px;
+		letter-spacing : -1px;
+		color : #4A4C59;
+		padding-top : 8px;
+		padding-bottom : 8px;
+		border-bottom : 1px solid #BDBB96;
+	}
+	h3 em {
+		font-size : 11px;
+		font-style : normal;
+		padding-left : 18px;
+	}
+	h4 {
+		font-size : 15px;
+		text-transform : uppercase;
+	}
+	h5 {
+		font-size : 13px;
+		margin-bottom : 0;
+	}
+	form ol {
+		list-style : none;
+	}
+	form ol li {
+		clear : left;
+		padding-bottom : 10px;
+	}
+	form ol li label {
+		display : block;
+		width : 200px;
+		float : left;
+	}
+	form .submit {
+		padding-left : 200px;
+	}
+	form fieldset {
+		padding-top : 17px;
+		margin-bottom : 17px;
+		border : none;
+		border-bottom : 1px solid #BDBB96;
+	}
+	form legend {
+		font-weight : bold;
+		color : #000;
+	}
+	form legend img {
+		vertical-align : middle;
+	}
+	form ol li input,form ol li img {
+		vertical-align : middle;
+	}
+	
+	#container {
+		border-bottom : 8px solid #767824;
+		background : #F0EBE0 url('../img/container_bg.gif') repeat-x top left;
+	}
+	.liner {
+		position : relative;
+		width : 760px;
+		margin : 0 auto;
+	}
+	#header {
+		height : 84px;
+		background : url('../img/header_bg.gif') no-repeat top left;
+	}
+	#header h1 span {
+		display : none;
+	}
+	#header h1 a:link,#header h1 a:visited {
+		display : block;
+		width : 250px;
+		height : 51px;
+		margin : 0;
+		padding : 0;
+	}
+	#header h2 {
+		font-size : 30px;
+		line-height : 0;
+		color : #7E7F22;
+		text-align : right;
+		text-transform : uppercase;
+	}
+	#main_nav {
+		position : absolute;
+		top : 0;
+		right : 0;
+		height : 51px;
+	}
+	#main_nav ul {
+		position : relative;
+		list-style : none;
+		padding-top : 20px;
+		margin : 0;
+	}
+	#main_nav ul li {
+		display : inline;
+		text-transform : uppercase;
+		font-size : 12px;
+		line-height : 12px;
+		padding : 0 0 0 26px;
+	}
+	#main_nav ul li a:link,#main_nav ul li a:visited {
+		color : #ccc;
+		padding : 16px 0 20px 0;
+		border-top : 4px solid #34362B;
+	}
+	
+	#main_nav ul li a:hover,#main_nav ul li a:active,
+	#about #main_nav ul li#nav_about a:link,#about #main_nav ul li#nav_about a:visited,
+	#method #main_nav ul li#nav_method a:link,#method #main_nav ul li#nav_method a:visited,
+	#services #main_nav ul li#nav_services a:link,#services #main_nav ul li#nav_services a:visited,
+	#tools #main_nav ul li#nav_tools a:link,#tools #main_nav ul li#nav_tools a:visited,
+	#portfolio #main_nav ul li#nav_portfolio a:link,#portfolio #main_nav ul li#nav_portfolio a:visited,
+	#contact #main_nav ul li#nav_contact a:link,#contact #main_nav ul li#nav_contact a:visited {
+		border-top : 4px solid #FFE57D;
+	}
+	
+	#content {
+		padding : 20px 0;
+	}
+	#footer {
+		font-size : 11px;
+		line-height : 8px;
+		color : #ccc;
+		padding : 18px 0;
+		background : url('../img/wind_powered.gif') no-repeat 680px 5px;
+	}
+	#footer p {
+		float : left;
+		width : 220px;
+	}
+	#footer ul {
+		float : left;
+		list-style : none;
+	}
+	#footer ul li {
+		display : inline;
+		padding : 0 4px;
+		border-left : 1px solid #ccc;
+	}
+	#footer a:link,#footer a:visited {
+		color : #ccc;
+	}
+	#footer #first {
+		border : none;
+	}
+	#footer a:hover,#footer a:active {
+		text-decoration : underline;
+	}
+	#images_list input {
+		width : 500px;
+		margin-right : 10px;
+	}
+	#images_list li {}
+	#images_list label {}
+	h3 span {
+		font-weight : normal;
+		float : right;
+	}
+	.image_column a:link,.image_column a:visited {
+		border-color : #999;
+	}
+	.image_column a:hover img,.image_column a:active img {
+		border-color : #918E31 !important;
+	}
+	.image_column img {
+		border : 5px solid #999;
+	}
+	.image_column {
+		float : left;
+		width : 400px;
+		height : 270px;
+	}
+	#about .image_column {
+		width : 240px;
+	}
+	.text_column {
+		width : 350px;
+		float : right;
+	}
+	.text_column ul {
+		list-style : none;
+	}
+	
+	#method #definition,#method #development,#method #deployment,#method #loops {
+		cursor : pointer;
+	}
+	#method #definition_blurb a:link,#method #definition_blurb a:visited,
+	#method #development_blurb a:link,#method #development_blurb a:visited,
+	#method #deployment_blurb a:link,#method #deployment_blurb a:visited,
+	#method #loops_blurb a:link,#method #loops_blurb a:visited {
+		color : #fff;
+	}
+	#method #definition span,#method #development span,#method #deployment span,#method #loops span {
+		padding-left : 12px;
+		background : url('../img/arrow_closed.gif') no-repeat center left;
+	}
+	#method .open span {
+		background : url('../img/arrow_open.gif') no-repeat center left !important;
+	}
+	#method #definition {
+		width : 693px;
+		padding : 8px 0 0 20px;
+		margin : 0;
+		background : url('../img/definition_blurb_top.gif') no-repeat top left;
+	}
+	#method #definition_blurb {
+		width : 713px;
+		padding-bottom : 10px;
+		background : #CF7D81 url('../img/definition_blurb_bottom.gif') no-repeat bottom left;
+		margin-bottom : 20px;
+	}
+	#method #development {
+		width : 693px;
+		padding : 8px 0 0 20px;
+		margin : 0;
+		background : url('../img/development_blurb_top.gif') no-repeat top left;
+	}
+	#method #development_blurb {
+		width : 713px;
+		padding-bottom : 10px;
+		background : #D0BB90 url('../img/development_blurb_bottom.gif') no-repeat bottom left;
+		margin-bottom : 20px;
+	}
+	#method #deployment {
+		width : 693px;
+		padding : 8px 0 0 20px;
+		margin : 0;
+		background : url('../img/deployment_blurb_top.gif') no-repeat top left;
+	}
+	#method #deployment_blurb {
+		width : 713px;
+		padding-bottom : 10px;
+		background : #B3BFB1 url('../img/deployment_blurb_bottom.gif') no-repeat bottom left;
+		margin-bottom : 20px;
+	}
+	#method #loops {
+		width : 693px;
+		padding : 8px 0 0 20px;
+		margin : 0;
+		background : url('../img/loops_blurb_top.gif') no-repeat top left;
+	}
+	#method #loops_blurb {
+		width : 713px;
+		padding-bottom : 10px;
+		background : #BCBDC1 url('../img/loops_blurb_bottom.gif') no-repeat bottom left;
+	}
+	#development_body,#deployment_body,#loops_body,#definition_body {
+		padding : 20px 20px 1px 20px;
+	}
+	
+	#index #header {
+		position : relative;
+		height : 51px !important;
+		background : none;
+		padding : 0;
+		margin : 0;
+	}
+	#index h1 {
+		display : none;
+	}
+	#index #container {
+		border : none;
+		background : #787B24 url('../img/index_container_bg.gif') repeat-x top left;
+	}
+	#index #content {
+		color : #1D1E22;
+		padding : 110px 0 55px 0;
+		background : #787B24 url('../img/index_bg.jpg') no-repeat top center;
+	}
+	#index #content a:link {
+		color : #FFE57D;
+	}
+	#index #content a:visited {
+		color : #E2D8B2;
+	}
+	#index #content a:hover,#index #content a:active {
+		color : #fc0;
+	}
+	#index #slideshow {
+		width : 758px;
+		height : 213px;
+		margin-bottom : 20px;
+	}
+	#index #content h3 {
+		clear : left;
+		font-size : 38px;
+		line-height : 38px;
+		letter-spacing : 0;
+		color : #FFE57D;
+		padding : 0;
+		border : none;
+	}
+	#index #left {
+		width : 370px;
+		float : left;
+	}
+	#index #right {
+		width : 370px;
+		float : right;
+	}
+	#index .pullout {
+		font-size : 18px;
+		line-height : 21px;
+	}
+	#index .pullout em {
+		font-style : normal;
+		background : #fc0;
+	}
+	
+	#contact fieldset {
+		margin-bottom : 0;
+		border : none;
+		border-bottom : 1px solid #BDBB96;
+	}
+	#contact form {
+		border-top : 2px solid #BDBB96;
+	}
+	
+	#sort_options p,#sort_options ul,#sort_options li {
+		float : left;
+	}
+	#sort_options p {
+		width : 60px;
+		text-transform : uppercase;
+		font-weight : bold;
+		padding-top : 3px;
+	}
+	#sort_options ul {
+		width : 600px;
+		list-style : none;
+		margin : 0;
+	}
+	#sort_options ul li {
+		position : relative;
+		margin-left : 10px;
+	}
+	#sort_options ul li a:link,#sort_options ul li a:visited {
+		display : block;
+		height : 22px;
+		color : #4A4C59;
+		padding-left : 10px;
+		background : url('../img/sort_nav.gif') no-repeat top left;
+		float : left;
+	}
+	#sort_options ul li a:link span,#sort_options ul li a:visited span {
+		display : block;
+		height : 19px;
+		padding-top : 3px;
+		padding-right : 10px;
+		text-align : center;
+		background : url('../img/sort_nav.gif') no-repeat top right;
+	}
+	#sort_options ul li a:hover,#sort_options ul li a:active,
+	#recent #sort_recent a:link,#recent #sort_recent a:visited,
+	#sites #sort_sites a:link,#sites #sort_sites a:visited,
+	#apps #sort_apps a:link,#apps #sort_apps a:visited,
+	#logos #sort_logos a:link,#logos #sort_logos a:visited,
+	#all #sort_all a:link,#all #sort_all a:visited {
+		color : #FFE57D;
+		background : url('../img/sort_nav_hover.gif') no-repeat top left;
+	}
+	#sort_options ul li a:hover span,#sort_options ul li a:active span,
+	#recent #sort_recent a:link span,#recent #sort_recent a:visited span,
+	#sites #sort_sites a:link span,#sites #sort_sites a:visited span,
+	#apps #sort_apps a:link span,#apps #sort_apps a:visited span,
+	#logos #sort_logos a:link span,#logos #sort_logos a:visited span,
+	#all #sort_all a:link span,#all #sort_all a:visited span {
+		background : url('../img/sort_nav_hover.gif') no-repeat top right;
+	}
+	* html #sort_options ul li {
+		width : 96px;
+	}
+	
+	
+	#arrange_list,#limbo_list {
+		min-height : 30px;
+		list-style : none;
+	}
+	#arrange_list li,#limbo_list li {
+		cursor : move;
+	}
+	
+	/*  SIFR STUFF  */
+	/*  These are standard sIFR styles... do not modify.  */
+	.sIFR-flash {
+		visibility: visible !important;
+		margin: 0;
+	}
+	.sIFR-replaced {
+		visibility: visible !important;
+	}
+	span.sIFR-alternate {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 0;
+		display: block;
+		overflow: hidden;
+	}
+	/*  These "decoy" styles are used to hide the browser text before it is replaced...
+		the negative-letter spacing in this case is used to make the browser text metrics
+		match up with the sIFR text metrics since the sIFR text in this example is so much
+		narrower... your own settings may vary... any weird sizing issues you may run into
+		are usually fixed by tweaking these decoy styles  */
+	.sIFR-hasFlash h3 {
+		visibility: hidden;
+	}
+	
+	#wordpress #content h3 {
+		clear : left;
+	}
+	#wordpress #content ul {
+		margin-left : 60px;
+	}
+	#wordpressSidebar {
+		width : 128px;
+		float : right;
+		padding : 205px 10px 1px 10px;
+		margin : 0 0 15px 15px;
+		background : url('../img/bg_wordpressSidebar.jpg') no-repeat top right;
+	}
+	#wordpressSidebar p {
+		color : #fff;
+		margin-bottom : 10px;
+	}
+	#wordpressSidebar a:link,#wordpressSidebar a:visited {
+		color : #BAB801;
+	}

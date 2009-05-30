@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Installation instructions for Drupal CMS</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+	<h1>Installation instructions for Drupal CMS</h1>
+</div>
+
+<div class="content">
+	<h2>Drupal 4.6.5</h2>
+	<p>This assume you have a default installation of Drupal 4.6.5, that means, no modifications whatsoever after install except for creating an admin user. If your system is modified, follow the instructions and skip the steps that you might have already done, like activating TinyMCE.
+	</p>
+	<p>
+	This installation instructions also assume you are including TinyMCE as the editor.
+	</p>
+	<p>
+	<strong>1.</strong> Download the 4.6.0 package of TinyMCE module on the Drupal.org website.
+	</p>
+	<p>
+	<strong>2.</strong> Follow the instructions inside that package, but download the latest version of TinyMCE (currently 2.0.3).
+	</p>
+	<p>
+	The structure should look something like this:
+	</p>
+	<pre>drupal/modules/tinymce/tinymce.module
+drupal/modules/tinymce/tinymce/jscripts/tiny_mce/tiny_mce.js
+	</pre>
+	<p>
+	<strong>3.</strong> In Drupal, go to Administer -> modules, check the "tinymce" module checkbox and save.
+	</p>
+	<p>
+	<strong>4.</strong> In Drupal, go to Administer -> access control, check both the TinyMCE checkboxes for authenticated user and save.
+	</p>
+	<p>
+	<strong>5.</strong> In Drupal, go to Administer -> settings -> tinymce, click on "Create new profile", enable TinyMCE for "authenticated user" and choose "advanced" mode, you might want to tweak setting here later on as well.
+	</p>
+	<p>
+	<strong>6.</strong> In Drupal, go to "create content" -> page, if TinyMCE doesn't show up, click on the "enable rich-text" button thats at the bottom of the big textarea. If you don't see that text or TinyMCE doesn't show up, something has gone wrong.
+	</p>
+	<p>
+	TinyMCE should now be working, we will proceed to install MCImageManager and MCFileManager, if your just installing one of them, skip the notices about the other. The installation instructions between MCImageManager and MCFileManager is quite similar.
+	</p>
+	<p>
+	<strong>7.</strong> Copy the MCImageManager and MCFileManager folders to 
+	</p>
+	<pre>drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins
+	</pre>
+	<p>
+	The structure should be
+	<pre>drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/imagemanager
+drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/filemanager
+	</pre>
+	</p>
+	<p>
+	<strong>8.</strong> Open up the file drupal/modules/tinymce/tinymce.module, go to line 278, the line should read
+	</p>
+		<pre>$init['plugins'] = file_exists(drupal_get_path('module', 'tinymce'). '/tinymce/jscripts/tiny_mce/plugins/drupalimage') ? 'drupalimage,table,emotions,print' : 'table,emotions,print';
+		</pre>
+	<p>change it to</p>
+		<pre>$init['plugins'] = 'table,emotions,print,imagemanager,filemanager';
+		</pre>
+	<p>This should make the "Browse" buttons to appear in the link and image popup inside TinyMCE.</p>
+
+	<p>Now we need to hook into the authentication of Drupal and take care of the configuration.</p>
+	<p>
+	<strong>9.</strong> Delete or rename the default config.php files located in
+	</p>
+	<pre>drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/imagemanager
+drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/filemanager
+	</pre>
+
+	<p>Rename the config.php.drupal to config.php.</p>
+	<p>
+	<strong>10.</strong> That is it, now you should have a functioning installation of MCimageManager and MCFileManager bootstraped to the authentication of Drupal.
+	</p>
+	<p>
+	This integration isn't quite perfect though, its not hooked into the profiles in anyway, you can not have TinyMCE enabled and NOT MCImageManager/MCFileManager enabled on different pages/profiles etc, if a user has access to TinyMCE, we has access to MCImageManager/MCFileManager.
+	</p>
+	<p>
+	If you have problems, visit the support forums at <a href="http://tinymce.moxiecode.com">http://tinymce.moxiecode.com</a>.
+	</p>
+	<div class="separator"></div>
+
+	<h2>Drupal 4.7.0 b4</h2>
+
+	<p>This assume you have a default installation of Drupal 4.7.0 B4, that means, no modifications whatsoever after install except for creating an admin user. If your system is modified, follow the instructions and skip the steps that you might have already done, like activating TinyMCE.</p>
+
+	<p>This installation instructions also assume you are including TinyMCE as the editor.</p>
+
+	<p><strong>1. </strong>Download the CVS package of TinyMCE module on the Drupal.org website (http://drupal.org/project/Modules/cvs).</p>
+
+	<p><strong>2. </strong>Follow the instructions inside that package, but download the latest version of TinyMCE (currently 2.0.3).</p>
+
+	<p>The structure should look something like this:</p>
+<pre>drupal/modules/tinymce/tinymce.module
+drupal/modules/tinymce/tinymce/jscripts/tiny_mce/tiny_mce.js
+</pre>
+	<p><strong>3. </strong>In Drupal, go to Administer -> modules, check the "tinymce" module checkbox and save.</p>
+
+	<p><strong>4. </strong>In Drupal, go to Administer -> access control, check both the TinyMCE checkboxes for authenticated user and save.</p>
+
+	<p><strong>5. </strong>In Drupal, go to Administer -> settings -> tinymce, click on "Create new profile", enable TinyMCE for "authenticated user" and choose "advanced" mode, you might want to tweak setting here later on as well.</p>
+
+	<p>Note: If you get an error while trying to create a new profile (I got an error when I wrote this), you need to go into drupal/modules/tinymce/tinymce.module and edit line 691, it should read</p>
+
+<pre>$b = file_exists($img_src) ? '&lt;img src="'. base_path(). $img_src .'" title="'. $button .'" style="border: 1px solid grey; vertical-align: middle;" /&gt;' : $button;
+</pre>
+	<p>change it to</p>
+<pre>$b = file_exists($img_src) ? '&lt;img src="'. $img_src .'" title="'. $button .'" style="border: 1px solid grey; vertical-align: middle;" /&gt;' : $button;</pre>
+
+	<p>Then proceed to create a profile and add the setting you want, please remember to enable the advimage and advlink buttons.</p>
+
+	<p><strong>6. </strong>In Drupal, go to "create content" -> page, if TinyMCE doesn't show up, click on the "enable rich-text" button thats at the bottom of the big textarea. If you don't see that text or TinyMCE doesn't show up, something has gone wrong.</p>
+
+	<p>TinyMCE should now be working, we will proceed to install MCImageManager and MCFileManager, if your just installing one of them, skip the notices about the other. The installation instructions between MCImageManager and MCFileManager is quite similar.</p>
+
+	<p><strong>7. </strong>Copy the MCImageManager and MCFileManager to </strong>
+
+	<pre>drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins</pre>
+
+	<p>The structure should be</p>
+	<pre>drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/imagemanager
+drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/filemanager</pre>
+
+	<p><strong>8. </strong>Currently, Drupal uses the old way if integrating plugins, but it still works, so in Drupal, go to the Administer -> settings -> tinymce and edit the profile you made earlier, edit "buttons and plugins", there should now be two more plugins listed there, "MCFileManager PHP" and "MCImageManager PHP", enable them.</p>
+
+	<p>This should make the "Browse" buttons to appear in the link and image popup inside TinyMCE.</p>
+
+	<p>Now we need to hook into the authentication of Drupal and take care of the configuration.</p>
+
+	<p><strong>9. </strong>Delete or rename the default config.php files located in</p>
+	<pre>drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/imagemanager
+drupal/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/filemanager</pre>
+
+	<p>Rename the config.php.drupal to config.php.</p>
+
+	<p><strong>10. </strong>That is it, now you should have a functioning installation of MCimageManager and MCFileManager bootstraped to the authentication of Drupal.</p>
+
+	<p>If a user has access to TinyMCE, we has access to MCImageManager/MCFileManager.</p>
+
+	<p><strong>11. </strong>You should open config.php and configure the rootpath to where you want the files to be listed. Consult the MCImageManager / MCFileManager documentation for more info regarding this.</p>
+	<p>If you have problems, visit the support forums at http://tinymce.moxiecode.com.</p>
+
+
+<div class="footer">
+	<div class="helpindexlink"><a href="index.html">Help index</a></div>
+	<div class="copyright">Copyright &copy; 2005-2006 Moxiecode Systems AB</div>
+	<br style="clear: both" />
+</div>
+
+</body>
+</html>

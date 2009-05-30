@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<language-pack>
+	<header>
+		<author>Moxiecode Systems AB</author>
+		<version minor="1" major="0" releasedate="2005-09-27" />
+		<description>
+			This is 'nn' the Norwegian (nynorsk) language pack for the MCImageManager.
+		</description>
+	</header>
+
+	<language code="nn" title="Norwegian (nynorsk)" dir="ltr">
+		<group target="common">
+			<item name="filemanager">Hopp til filutforskeren</item>
+			<item name="createdir">Opprett katalog</item>
+			<item name="refresh">Oppdater</item>
+			<item name="upload">Last opp bilde</item>
+			<item name="error_no_access">Feil: Ingen skrivetilgang til denne fil eller i denne katalog.</item>
+			<item name="error_delete_failed">Feil: Du har ikkje rettigheter til fjerning av filer i denne katalog.</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">Opprett katalog</item>
+			<item name="description">Velg navnet på katalogen du vil opprette.</item>
+			<item name="template">Mal:</item>
+			<item name="select_template">-- Velg mal --</item>
+			<item name="directory_name">Katalognavn:</item>
+			<item name="create_in">Opprett i:</item>
+			<item name="button_create">Opprett</item>
+			<item name="button_cancel">Avbryt</item>
+			<item name="error_missing_name">Feil: Du må angi eit katalognavn.</item>
+			<item name="error_select_template">Feil: Du må velge ein katalog mal.</item>
+			<item name="error_template_missing">Feil: Den valgte malen finnes ikkje.</item>
+			<item name="error_invalid_name">Feil: Katalognavnet du oppga inneheld ukorrekte tegn.</item>
+			<item name="error_exists">Feil: Ein katalog med det oppgitte navnet finnes allerede.</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">Laste opp</item>
+			<item name="description">Benytt formularet for å laste opp filer.</item>
+			<item name="upload_in">Laste opp til:</item>
+			<item name="valid_extensions">Godkjente filendingar:</item>
+			<item name="max_upload_size">Max filstørrelse:</item>
+			<item name="file_to_upload">Fil som skal lastes opp:</item>
+			<item name="as_file_name">Som filnavn:</item>
+			<item name="required_filename">Du må skrive eit filnavn til filen du vil laste opp.</item>
+			<item name="button_upload">Last opp</item>
+			<item name="button_add_upload">Legg til fil</item>
+			<item name="button_cancel">Avbryt</item>
+			<item name="error_exists">Feil: Ein fil med det oppgitte navnet finnes allerede.</item>
+			<item name="error_to_large">Feil: Filen du forsøker laste opp er for stor.</item>
+			<item name="remove">Fjern</item>
+		</group>
+
+		<group target="images">
+			<item name="title">Moxiecode Image Manager</item>
+			<item name="subtitle">Image Manager</item>
+			<item name="select_directory">Velg katalog:</item>
+			<item name="width">Bredde:</item>
+			<item name="height">Høgde:</item>
+			<item name="type">Type:</item>
+			<item name="size">Størrelse:</item>
+			<item name="scale">Skalering:</item>
+			<item name="confirm_delete">Er du sikker på at du vil fjerne denne filen?</item>
+			<item name="no_files">Det finnes ingen bilder i denne katalogen.</item>
+			<item name="image">Bilde</item>
+			<item name="bmp">BMP bilde</item>
+			<item name="png">PNG bilde</item>
+			<item name="jpg">JPEG bilde</item>
+			<item name="gif">GIF bilde</item>
+			<item name="tif">TIFF bilde</item>
+			<item name="editwriteaccess">Feil: Ingen skrivetillatelse, midlertidige filer kan ikkje opprettes.</item>
+			<item name="os_title">Tittel:</item>
+		</group>
+
+		<group target="edit_image">
+			<item name="save_image">Lagre bilde</item>
+			<item name="revert_image">Retur til forrige versjon</item>
+			<item name="toggle_color">Invertere markeringsfargen</item>
+			<item name="crop_image">Beskjær bilde</item>
+			<item name="resize_image">Endre bilde størrelse</item>
+			<item name="please_wait">Behandler bilder, vennligst vent...</item>
+			<item name="constrain">Behold proporsjoner</item>
+			<item name="left">v:</item>
+			<item name="top">t:</item>
+			<item name="width">b:</item>
+			<item name="height">h:</item>
+		</group>
+
+		<group target="preview">
+			<item name="title">Forhåndsvisning</item>
+			<item name="prev">forrige</item>	
+			<item name="next">neste</item>
+			<item name="keyboard_next">Hurtigtast for neste bilde: SPACE,N,RIGHTARROW,PAGE DOWN</item>
+			<item name="keyboard_prev">Hurtigtast for forrige bilde: P,LEFTARROW,PAGE UP</item>
+		</group>
+
+	</language>
+</language-pack>
+
+
+

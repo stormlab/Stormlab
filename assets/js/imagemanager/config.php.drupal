@@ -1,0 +1,30 @@
+<?php
+	require_once("classes/Authenticators/DrupalAuthenticatorImpl.php");
+	
+	// This code will use the files and user path in Drupal 4.7
+	$base = TINY_ROOT ."/";
+
+	$user_path = "";
+	if (user_access('administer tinymce'))
+		$user_path  = $base . variable_get('file_directory_path', 'files').'/pictures/';
+	else if (user_access('tinymce'))
+		$user_path  = $base . variable_get('file_directory_path', 'files') .'/pictures/'.$user->uid;
+
+	if ($user_path != "" && !is_dir($user_path))
+		mkdir($user_path);
+
+	// General settings
+	$mcImageManagerConfig['general.login_page'] = "not_loggedin.php";
+
+	// File system settings
+	$mcImageManagerConfig['filesystem.path'] = $user_path;
+	$mcImageManagerConfig['filesystem.rootpath'] = $user_path;
+
+	// Authenication with Session
+	$mcImageManagerConfig['authenticator'] = "DrupalAuthenticatorImpl";
+
+
+	//var_dump($mcImageManagerConfig);
+	//die("1");
+
+?>

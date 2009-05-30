@@ -1,0 +1,8 @@
+<?php
+	/* *
+	 * Minimal configuration
+	 * The rest of the configuration is taken from the default_config.php file in /includes/ folder.
+	 */
+	$mcImageManagerConfig['filesystem.rootpath'] = "images";
+	$mcImageManagerConfig['filesystem.path'] = "images";
+?>

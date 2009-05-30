@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Option: thumbnail.information</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+	<h1>Option: thumbnail.information</h1>
+</div>
+
+<div class="content">
+	<p>This option should contain a comma seperated list of information to include in the image mouseover information window. It is not possible to change the order of their apperance, only if they should be included or not. Order in the comma seperated list does not matter.</p>
+	<p>
+	These are the options avalible:
+	<ul>
+		<li>name</li>
+		<li>width</li>
+		<li>height</li>
+		<li>type</li>
+		<li>size</li>
+		<li>scale</li>
+	</ul>
+	</p>
+	<h3>Example of usage in the config.php file:</h3>
+	<div class="example">
+<pre>
+$mcImageManagerConfig['thumbnail.information'] = "name,width,height,type,size,scale";
+</pre>
+</div>
+<br />
+	<h3>Example of usage in a mc_access file:</h3>
+	<div class="example">
+<pre>
+thumbnail.information=width,height
+</pre>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="helpindexlink"><a href="index.html">Help index</a></div>
+	<div class="copyright">Copyright &copy; 2005-2006 Moxiecode Systems AB</div>
+	<br style="clear: both" />
+</div>
+
+</body>
+</html>

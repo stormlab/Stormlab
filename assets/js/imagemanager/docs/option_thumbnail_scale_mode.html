@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Option: thumbnail.scale_mode</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+	<h1>Option: thumbnail.scale_mode</h1>
+</div>
+
+<div class="content">
+	<p>The type of scaling to be used for thumbnails in the thumbnail view. There are currently two options, resize and percentage. Resize will set the width and height of all thumbnails to the values set by <a href="option_thumbnail_height.html">thumbnail.height</a> and <a href="option_thumbnail_width.html">thumbnail.width</a>. Percentage will scale down the thumbnails to fit into the size set by <a href="option_thumbnail_width.html">thumbnail.height</a> and <a href="option_thumbnail_height.html">thumbnail.height</a> but force the scale ratio to be the same.</p>
+	<p>
+	These are the valid values of this option:
+		<ul>
+			<li>percentage</li>
+			<li>resize</li>
+		</ul>
+	</p>
+	<h3>Example of usage in the config.php file:</h3>
+	<div class="example">
+<pre>
+$mcImageManagerConfig['thumbnail.scale_mode'] = "percentage";
+</pre>
+</div>
+<br />
+	<h3>Example of usage in a mc_access file:</h3>
+	<div class="example">
+<pre>
+thumbnail.scale_mode=percentage
+</pre>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="helpindexlink"><a href="index.html">Help index</a></div>
+	<div class="copyright">Copyright &copy; 2005-2006 Moxiecode Systems AB</div>
+	<br style="clear: both" />
+</div>
+
+</body>
+</html>

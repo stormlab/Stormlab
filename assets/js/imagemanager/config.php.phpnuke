@@ -1,0 +1,13 @@
+<?php
+	require_once("classes/Authenticators/PHPNukeAuthenticatorImpl.php");
+
+	// General settings
+	$mcImageManagerConfig['general.login_page'] = "not_loggedin.php";
+
+	// File system settings
+	$mcImageManagerConfig['filesystem.path'] = "images";
+	$mcImageManagerConfig['filesystem.rootpath'] = "images";
+
+	// Authenication with Session
+	$mcImageManagerConfig['authenticator'] = "PHPNukeAuthenticatorImpl";
+?>

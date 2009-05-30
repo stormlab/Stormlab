@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fas_header>
+	<item bgImage="/assets/img/slide_prerace.jpg" url="/portfolio/sort/all/#prerace" />
+	<item bgImage="/assets/img/slide_sundance.jpg" url="/portfolio/sort/all/#sundance-mountain-lodge" />
+	<item bgImage="/assets/img/slide_wells.jpg" url="/portfolio/sort/all/#wells-communications" />
+	<item bgImage="/assets/img/slide_stdavids.jpg" url="/portfolio/sort/all/#st-davids-healthcare" />
+	<item bgImage="/assets/img/slide_cfm.jpg" url="/portfolio/sort/all/#cline-financial-management" />
+	<item bgImage="/assets/img/slide_kachi.jpg" url="/portfolio/sort/all/#kachi-partners" />
+	<item bgImage="/assets/img/slide_pari.jpg" url="/portfolio/sort/all/#pari-livermore" />
+	<item bgImage="/assets/img/slide_c360.jpg" url="/portfolio/sort/all/#climate360" />
+	<item bgImage="/assets/img/slide_cv.jpg" url="/portfolio/sort/all/#campus-vortex" />
+	<item bgImage="/assets/img/slide_nuen.jpg" url="/portfolio/sort/all/#nuenergen" />
+	<item bgImage="/assets/img/slide_rightpsi.jpg" url="/portfolio/sort/all/#rightpsi" />
+</fas_header>

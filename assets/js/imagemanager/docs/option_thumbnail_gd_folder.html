@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Option: thumbnail.gd.folder</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="header">
+	<h1>Option: thumbnail.gd.folder</h1>
+</div>
+
+<div class="content">
+	<p>This is a relative path to where the generated thumbnails should be stored and retrieved from, as default, it uses "mcith" folder. This folder will be created if it does not exist, the folder will be created as a subfolder to the folder where the image is.</p>
+	<p>If you do not wish to show this folder, you can filter it out using the <a href="option_filesystem_exclude_directory_pattern.html">filesystem.exclude_directory_pattern</a> option.</p>
+	<p>Please note that this is a required configuration if you want to use the auto generate functionalty.</p>
+	<h3>Example of usage in the config.php file:</h3>
+	<div class="example">
+<pre>
+$mcImageManagerConfig['thumbnail.gd.folder'] = "mcith";
+</pre>
+</div>
+<br />
+	<h3>Example of usage in a mc_access file:</h3>
+	<div class="example">
+<pre>
+thumbnail.gd.folder="mcith"
+</pre>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="helpindexlink"><a href="index.html">Help index</a></div>
+	<div class="copyright">Copyright &copy; 2005-2006 Moxiecode Systems AB</div>
+	<br style="clear: both" />
+</div>
+
+</body>
+</html>
